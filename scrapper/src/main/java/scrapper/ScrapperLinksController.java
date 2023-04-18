@@ -21,7 +21,7 @@ public class ScrapperLinksController {
     @ApiResponse(responseCode = "404", description = "Ссылка не найдена")
     @GetMapping
     ListLinksResponse getLinks(@RequestHeader int id){
-        return new ListLinksResponse(new LinkResponse[id], 12);
+        return new ListLinksResponse(new LinkResponse[1], 12);
     }
     @PostMapping
     AddLinkRequest addLinkRequest(@RequestHeader int id) throws URISyntaxException {
@@ -49,4 +49,5 @@ public class ScrapperLinksController {
                 e.getLocalizedMessage(),
                 new String[]{String.valueOf(e.getStackTrace())});
     }
+
 }

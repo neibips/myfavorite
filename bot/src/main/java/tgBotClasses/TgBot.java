@@ -4,9 +4,19 @@ import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.BotCommand;
 import com.pengrad.telegrambot.request.SetMyCommands;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+
+
+@Component
 public class TgBot {
-    TelegramBot bot = new TelegramBot("6201413186:AAGMfU2EOz8dBCRjRd0FqSGsFXu96gOi6kA");
+
+    @Autowired
+    private String getToken;
+
+    TelegramBot bot = new TelegramBot("6247035103:AAHNinyHrm6HAOXWLRNrqqq0-3KDFDHxf2A");
+
     public void startBot(){
         TgBotMethods tgBotMethods = new TgBotMethods();
         tgBotMethods.setBot(bot);
@@ -20,5 +30,6 @@ public class TgBot {
         bot.execute(new SetMyCommands(botCommands));
 
     }
+
 }
 

@@ -3,7 +3,7 @@ package backend;
 import java.net.URISyntaxException;
 import java.util.Scanner;
 
-public class App 
+public class App
 {
     public static void main( String[] args ) throws URISyntaxException {
 
@@ -11,6 +11,6 @@ public class App
         System.out.println("Введите ссылку: ");
         String URL = sc.nextLine();
         BackendLinkParser linkParser = new BackendLinkParser(URL);
-        System.out.println(linkParser.getData());
+        System.out.println(linkParser.getData().toString());
     }
 }
