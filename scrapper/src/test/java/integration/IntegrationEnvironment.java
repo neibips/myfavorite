@@ -35,7 +35,7 @@ public class IntegrationEnvironment {
                 POSTGRE_SQL_CONTAINER.getUsername(), POSTGRE_SQL_CONTAINER.getPassword())){
 
             Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(new JdbcConnection(connection));
-            Liquibase liquibase = new liquibase.Liquibase("master.xml", new DirectoryResourceAccessor(MIGRATIONS_PATH), database);
+            Liquibase liquibase = new Liquibase("master.xml", new DirectoryResourceAccessor(MIGRATIONS_PATH), database);
             liquibase.update(new Contexts(), new LabelExpression());
 
         } catch (SQLException | FileNotFoundException | LiquibaseException e) {

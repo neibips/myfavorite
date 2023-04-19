@@ -1,4 +1,6 @@
-import dbServices.LinkUpdater;
+package scheduled;
+
+import db_services.LinkUpdater;
 import org.apache.logging.log4j.LogManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
