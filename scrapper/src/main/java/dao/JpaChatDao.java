@@ -13,6 +13,8 @@ import java.util.function.Consumer;
 public class JpaChatDao implements Dao<Chat>{
     private EntityManager entityManager;
 
+
+
     @Override
     public Optional<Chat> get(long id) {
         return Optional.ofNullable(entityManager.find(Chat.class, id));
