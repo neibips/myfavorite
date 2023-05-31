@@ -47,9 +47,9 @@ public class TgBotMethods {
                 "/list - показать список отслеживаемых ссылок";
         switch (msg){
             case "/help":   return helpMsg;
-            case "/start": return "Запущен";
-            case "/track": return  "Затречить";
-            case "/untrack": return "Не тречить";
+            case "/start": return "Бот запущен";
+            case "/track": return  "Введите ссылку для отслеживания:";
+            case "/untrack": return "Прекратить слежение";
             case "/list": return  (hasList)?"Список":"Нет списка";
             default: return  "/help - для вызова списка команд";
         }
