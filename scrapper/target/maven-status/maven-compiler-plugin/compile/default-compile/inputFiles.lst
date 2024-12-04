@@ -1,3 +1,9 @@
-X:\kRolex1.0\scrapper\src\main\java\configuration\ApplicationConfig.java
-X:\kRolex1.0\scrapper\src\main\java\kRolex\App.java
-X:\kRolex1.0\scrapper\src\main\java\scrapper\ScrapperApplication.java
+/Users/maharaji/java-apps/myfavorite/scrapper/src/main/java/scrapper/ScrapperApplication.java
+/Users/maharaji/java-apps/myfavorite/scrapper/src/main/java/dto_classes/response/ListLinksResponse.java
+/Users/maharaji/java-apps/myfavorite/scrapper/src/main/java/configuration/ApplicationConfig.java
+/Users/maharaji/java-apps/myfavorite/scrapper/src/main/java/scrapper/ScrapperLinksController.java
+/Users/maharaji/java-apps/myfavorite/scrapper/src/main/java/dto_classes/response/ApiErrorResponse.java
+/Users/maharaji/java-apps/myfavorite/scrapper/src/main/java/dto_classes/request/RemoveLinkRequest.java
+/Users/maharaji/java-apps/myfavorite/scrapper/src/main/java/scrapper/ScrapperTgChatController.java
+/Users/maharaji/java-apps/myfavorite/scrapper/src/main/java/dto_classes/response/LinkResponse.java
+/Users/maharaji/java-apps/myfavorite/scrapper/src/main/java/dto_classes/request/AddLinkRequest.java
